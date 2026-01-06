@@ -69,17 +69,15 @@ Model được fine-tune trên **3000+ giờ** dữ liệu tiếng Việt chất
 ### Cài đặt từ source
 
 ```bash
-# Clone repo
-git clone https://github.com/iamdinhthuan/viterbox-tts.git
-cd viterbox
+git clone https://github.com/nsknet/viterbox-tts
+cd viterbox-tts
 
-# Tạo virtual environment (khuyến nghị)
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# hoặc: venv\Scripts\activate  # Windows
+uv venv --python 3.10
+source .venv/bin/activate
 
-# Cài đặt dependencies
-pip install -r requirements.txt
+
+uv sync
+uv pip install -r requirements.txt
 ```
 
 ### Cài đặt với pip
